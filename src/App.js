@@ -10,7 +10,7 @@ function App() {
          <audio src={sound} autoPlay />
          <header>
             <img src={logo} alt="logo" />
-            <h1>Toudoummm</h1>
+            <h1>Toudoummm...</h1>
          </header>
          <main>
             <Section />
