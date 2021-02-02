@@ -34,6 +34,8 @@ section div {
    flex-wrap: nowrap;
    overflow: hidden;
    overflow-x: auto;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
 }
 section div img {
    width: 220px;
@@ -46,4 +48,22 @@ section div img:hover {
 }
 section div::-webkit-scrollbar {
    display: none;
+}
+footer {
+   font-size: 12px;
+   font-weight: 100;
+   color: #999999;
+   text-align: center;
+   padding-top: 5px;
+}
+footer strong {
+   font-weight: 500;
+}
+footer a {
+   font-weight: 500;
+   color: #999999;
+   text-decoration: none;
+}
+footer a:hover {
+   text-decoration: underline;
 }
