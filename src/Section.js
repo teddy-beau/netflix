@@ -9,10 +9,9 @@ const Section = () => {
          {movies.map((elem, index) => {
             // console.log(elem);
             return (
-               <section>
-                  <Category key={index} name={elem.category} />
+               <section key={index}>
+                  <Category name={elem.category} />
                   <Thumbnails
-                     key={elem.category}
                      category={elem.category}
                      imagesArray={elem.images}
                   />
