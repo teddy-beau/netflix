@@ -12,6 +12,7 @@ const Thumbnails = (props) => {
             // console.log("elem: ", elem);
             return <img key={index} src={elem} alt={props.category} />;
          })}
+         <div className="fadeout"></div>
       </div>
    );
 };
