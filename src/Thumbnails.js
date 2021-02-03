@@ -1,16 +1,13 @@
-// import movies from "./movies.json";
-
-// import noImg from "./assets/images/image-not-found.jpg";
-
-const Thumbnails = (props) => {
+// Destructuring de props
+const Thumbnails = ({ category, imagesArray }) => {
    // console.log("props: ", props);
    // console.log("props.cat: ", props.cat);
 
    return (
       <div>
-         {props.imagesArray.map((elem, index) => {
+         {imagesArray.map((elem, index) => {
             // console.log("elem: ", elem);
-            return <img key={index} src={elem} alt={props.category} />;
+            return <img key={index} src={elem} alt={category} />;
          })}
          <div className="fadeout"></div>
       </div>
